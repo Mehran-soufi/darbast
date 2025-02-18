@@ -2,20 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Iran-Yekan";
+  src: "../fonts/B_Yekan/Yekan.ttf";
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Iran-Yekan";
+  direction: rtl;
+}
+
+/* menu */
+.custom-menu {
+  position: relative;
+  padding: 0.2rem 0;
+}
+.custom-menu::after {
+  content: "";
+  position: absolute;
+  /* width: 0; */
+  height: 1px;
+  background: #ea580c;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s ease-in;
 }
