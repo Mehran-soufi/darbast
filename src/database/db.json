@@ -1,0 +1,258 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "ویلا"
+    },
+    {
+      "id": 2,
+      "name": "هتل"
+    },
+    {
+      "id": 3,
+      "name": "کلبه جنگلی"
+    }
+  ],
+  "provinces": [
+    {
+      "id": 1,
+      "name": "گیلان"
+    },
+    {
+      "id": 2,
+      "name": "مازندران"
+    },
+    {
+      "id": 3,
+      "name": "گلستان"
+    },
+    {
+      "id": 4,
+      "name": "تهران"
+    },
+    {
+      "id": 5,
+      "name": "آذربایجان شرقی"
+    },
+    {
+      "id": 6,
+      "name": "آذربایجان غربی"
+    },
+    {
+      "id": 7,
+      "name": "لرستان"
+    },
+    {
+      "id": 8,
+      "name": "هرمزگان"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "رشت",
+      "province_id": 1
+    },
+    {
+      "id": 2,
+      "name": "بندر انزلی",
+      "province_id": 1
+    },
+    {
+      "id": 3,
+      "name": "لاهیجان",
+      "province_id": 1
+    },
+    {
+      "id": 4,
+      "name": "ساری",
+      "province_id": 2
+    },
+    {
+      "id": 5,
+      "name": "بابل",
+      "province_id": 2
+    },
+    {
+      "id": 6,
+      "name": "بابلسر",
+      "province_id": 2
+    },
+    {
+      "id": 7,
+      "name": "گرگان",
+      "province_id": 3
+    },
+    {
+      "id": 8,
+      "name": "گنبد کاووس",
+      "province_id": 3
+    },
+    {
+      "id": 9,
+      "name": "مینودشت",
+      "province_id": 3
+    },
+    {
+      "id": 10,
+      "name": "تهران",
+      "province_id": 4
+    },
+    {
+      "id": 11,
+      "name": "شمیرانات",
+      "province_id": 4
+    },
+    {
+      "id": 12,
+      "name": "شهریار",
+      "province_id": 4
+    },
+    {
+      "id": 13,
+      "name": "تبریز",
+      "province_id": 5
+    },
+    {
+      "id": 14,
+      "name": "مراغه",
+      "province_id": 5
+    },
+    {
+      "id": 15,
+      "name": "مرند",
+      "province_id": 5
+    },
+    {
+      "id": 16,
+      "name": "ارومیه",
+      "province_id": 6
+    },
+    {
+      "id": 17,
+      "name": "خوی",
+      "province_id": 6
+    },
+    {
+      "id": 18,
+      "name": "مهاباد",
+      "province_id": 6
+    },
+    {
+      "id": 19,
+      "name": "خرم‌آباد",
+      "province_id": 7
+    },
+    {
+      "id": 20,
+      "name": "بروجرد",
+      "province_id": 7
+    },
+    {
+      "id": 21,
+      "name": "دورود",
+      "province_id": 7
+    },
+    {
+      "id": 22,
+      "name": "بندرعباس",
+      "province_id": 8
+    },
+    {
+      "id": 23,
+      "name": "قشم",
+      "province_id": 8
+    },
+    {
+      "id": 24,
+      "name": "بندر لنگه",
+      "province_id": 8
+    }
+  ],
+  "accommodations": [
+    {
+      "id": 1,
+      "title": "ویلای ساحلی آبی",
+      "rating": 4.7,
+      "price": 5000000,
+      "discount": 15,
+      "city_id": 1,
+      "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
+      "category_id": 1,
+      "additional_images": [
+        "https://imgurl.ir/uploads/h40403_villa-saheli2.jpg",
+        "https://imgurl.ir/uploads/e86252_villa-saheli.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ویلای کلبه جنگلی",
+      "rating": 4.9,
+      "price": 3500000,
+      "discount": 10,
+      "city_id": 1,
+      "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
+      "category_id": 1,
+      "additional_images": [
+        "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
+        "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ویلای ساحلی آبی",
+      "rating": 4.7,
+      "price": 5000000,
+      "discount": 15,
+      "city_id": 1,
+      "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
+      "category_id": 1,
+      "additional_images": [
+        "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
+        "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "ویلای ساحلی آبی",
+      "rating": 4.7,
+      "price": 5000000,
+      "discount": 15,
+      "city_id": 1,
+      "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
+      "category_id": 1,
+      "additional_images": [
+        "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
+        "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "ویلای ساحلی آبی",
+      "rating": 4.7,
+      "price": 5000000,
+      "discount": 15,
+      "city_id": 1,
+      "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
+      "category_id": 1,
+      "additional_images": [
+        "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
+        "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "ویلای ساحلی آبی",
+      "rating": 4.7,
+      "price": 5000000,
+      "discount": 15,
+      "city_id": 1,
+      "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
+      "category_id": 1,
+      "additional_images": [
+        "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
+        "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ]
+    }
+  ]
+}

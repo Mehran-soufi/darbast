@@ -12,6 +12,28 @@ body {
   direction: rtl;
 }
 
+/* section */
+.section {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+/* splash */
+.splash {
+  width: 100%;
+  height: 100%;
+  background:
+    repeating-conic-gradient(#00f 0 3%, #0000 0 11%),
+    repeating-conic-gradient(#0000 0 5%, #00f 0 7%) 50% / 60% 60%,
+    repeating-conic-gradient(#0000 0 7%, #00f 0 9%) 50% / 70% 70%,
+    repeating-conic-gradient(#0000 0 11%, #00f 0 13%) 50% / 80% 80%,
+    radial-gradient(#00f 22%, #0000 0),
+    #fff;
+  background-repeat: no-repeat;
+  filter: blur(20px) contrast(50);
+  /* box-shadow: 0 0 0 50px #fff; */
+}
+
 /* menu */
 .custom-menu {
   position: relative;
@@ -27,3 +49,114 @@ body {
   right: 0;
   transition: 0.3s ease-in;
 }
+
+/* hero */
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000068, #ffffff68);
+  top: 0;
+  left: 0;
+}
+
+/* custom search form style */
+.search .input-cus {
+  position: relative;
+}
+@media (min-width: 640px) {
+  .search .input-cus::before {
+    content: "|";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.search .css-5h82ro-MuiInputBase-root-MuiInput-root::before {
+  border-bottom: 0 !important;
+}
+.search .css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: "Iran-Yekan" !important;
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+  width: 100% !important;
+  transform-origin: top right !important;
+  padding: 0 0.4rem !important;
+  right: 0 !important;
+}
+.search .css-5h82ro-MuiInputBase-root-MuiInput-root {
+  font-family: "Iran-Yekan" !important;
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+.search .css-5h82ro-MuiInputBase-root-MuiInput-root::before {
+  right: 0 !important;
+}
+.search .css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+  right: 0 !important;
+  transform-origin: top right !important;
+  padding-right: 0.4rem !important;
+}
+
+.search .css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #ea580c !important ;
+  font-family: "Iran-Yekan" !important;
+}
+.search .css-1yrc8ca-MuiInputBase-input-MuiInput-input:focus {
+  padding-right: 0.4rem !important;
+  color: #000 !important ;
+}
+.search .css-5h82ro-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 0 !important;
+  right: 0 !important;
+  left: 100% !important;
+}
+.search .css-74d805-MuiButtonBase-root-MuiButton-root {
+  font-family: "Iran-Yekan" !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  height: 100% !important;
+  margin: 0 !important;
+  transition: 0.3s ease-in !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}
+.search .css-74d805-MuiButtonBase-root-MuiButton-root:hover {
+  background: #f97316 !important;
+}
+
+/* slider custom style */
+.css-75uvui-MuiButtonGroup-root {
+  box-shadow: none !important;
+}
+.css-75uvui-MuiButtonGroup-root button {
+  border: none !important;
+  border-radius: 0.4rem !important;
+  background: #ea580c !important;
+  transition: 0.3s ease-in;
+  padding: .4rem .5rem !important;
+}
+.css-75uvui-MuiButtonGroup-root button:hover{
+  background: #f97316 !important;
+}
+.css-75uvui-MuiButtonGroup-root .MuiButtonGroup-firstButton {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.css-75uvui-MuiButtonGroup-root .MuiButtonGroup-lastButton {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+ /* slider custom style */
+ .swiper-wrapper{
+  padding: .5rem 0 !important;
+ }
