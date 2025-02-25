@@ -160,3 +160,16 @@ body {
  .swiper-wrapper{
   padding: .5rem 0 !important;
  }
+
+ /* error page */
+ .css-74d805-MuiButtonBase-root-MuiButton-root{
+  background-color: #ea580c !important;
+  transition: 0.3s ease-in !important;
+  padding: .4rem 1.5rem !important;
+  font-family: "Iran-Yekan" !important;
+  font-size: 1.1rem !important;
+ }
+ /* error page */
+ .css-74d805-MuiButtonBase-root-MuiButton-root:hover{
+  background-color: #f97316 !important;
+ }

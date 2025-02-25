@@ -43,8 +43,7 @@ function Slides({ setSwiperRef, data }: SlidesProps) {
         {data.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="rounded-md group overflow-hidden shadow shadow-slate-300 transition
-             duration-300 ease-in hover:shadow-md"
+            className="rounded-md group overflow-hidden shadow shadow-slate-300 transition duration-500 ease-linear hover:shadow-md hover:shadow-orange-600"
           >
             <Link href="/" className="w-full h-full overflow-hidden">
               <div

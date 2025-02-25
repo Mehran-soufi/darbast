@@ -1,7 +1,9 @@
+// pages/index.tsx
 import Search from "@/components/search/Search";
 import hero from "../assets/home/hero.jpeg";
 import Slider from "@/components/slider/Slider";
 import Property from "@/components/property/Property";
+import ErrorPage from "./_error";
 
 interface Accommodation {
   id: string;
@@ -22,7 +24,7 @@ async function getAccommodations(): Promise<Accommodation[]> {
   
   if (!res.ok) {
     console.error("Failed to fetch accommodations");
-    return [];
+    throw new Error("Failed to fetch accommodations");
   }
 
   const data = await res.json();
@@ -31,19 +33,24 @@ async function getAccommodations(): Promise<Accommodation[]> {
 }
 
 export default async function Home() {
-  const accommodations = await getAccommodations();
-  console.log("Accommodations in Home component:", accommodations);
+  try {
+    const accommodations = await getAccommodations();
+    console.log("Accommodations in Home component:", accommodations);
 
-  return (
-    <div>
-      <div className="w-full h-[80vh] relative hero">
-        <img src={hero.src} alt="hero" className="w-full h-full object-cover" />
-        <div className="w-full h-full absolute left-0 top-0 flex justify-center items-center">
-          <Search />
+    return (
+      <div>
+        <div className="w-full h-[80vh] relative hero">
+          <img src={hero.src} alt="hero" className="w-full h-full object-cover" />
+          <div className="w-full h-full absolute left-0 top-0 flex justify-center items-center">
+            <Search />
+          </div>
         </div>
+        <Property/>
+        <Slider data={accommodations} />
       </div>
-      <Property/>
-      <Slider data={accommodations} />
-    </div>
-  );
+    );
+  } catch (error) {
+    console.error("Error in Home component:", error);
+    return <ErrorPage />;
+  }
 }

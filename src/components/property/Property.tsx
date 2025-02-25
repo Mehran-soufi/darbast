@@ -1,26 +1,25 @@
 import React from "react";
-import { FaHeadphones } from "react-icons/fa";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { FaHeadphones, FaLaptopCode, FaMoneyBillWave } from "react-icons/fa";
 import splash from "@/assets/property/spalsh.png";
 
 const propertyItems = [
-  {
-    title: "پشتیبانی",
-    description: "با پشتیبانی سریع و به موقع همیشه در خدمت شماهستیم.",
-    icon: <FaHeadphones />,
-  },
-  {
-    title: "پشتیبانی",
-    description: "با پشتیبانی سریع و به موقع همیشه در خدمت شماهستیم.",
-    icon: <FaMoneyBillTransfer />,
-  },
-  {
-    title: "پشتیبانی",
-    description: "با پشتیبانی سریع و به موقع همیشه در خدمت شماهستیم.",
-    icon: <FaHeadphones />,
-  },
-];
-
+    {
+      title: "پشتیبانی ۲۴/۷",
+      description: "پشتیبانی ۲۴ ساعته در تمام روزهای هفته.",
+      icon: <FaHeadphones />,
+    },
+    {
+      title: "تضمین قیمت",
+      description: "ارائه بهترین قیمت‌ها با تضمین کامل.",
+      icon: <FaMoneyBillWave />,
+    },
+    {
+      title: "رابط کاربری آسان",
+      description: "سایتی با رابط کاربری ساده و کاربرپسند.",
+      icon: <FaLaptopCode />,
+    },
+  ];
+  
 function Property() {
   return (
     <section className="section flex sm:flex-row flex-col justify-center items-center lg:gap-8 gap-2 lg:p-4 sm:p-2">
