@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/header/Header";
+import Layout from "@/components/Layout";
 
 export const metadata: Metadata = {
   title: "دربست | اجاره کوتاه مدت",
@@ -14,10 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-          <body>
-            <Header/>
-            {children}
-            </body>
+      <body>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }

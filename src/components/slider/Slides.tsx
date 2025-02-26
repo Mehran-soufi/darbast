@@ -18,36 +18,36 @@ interface SlidesProps {
 
 function Slides({ setSwiperRef, data }: SlidesProps) {
   return (
-    <div className="w-full my-2 flex items-center justify-center">
+    <div className="w-full  my-2 flex items-center justify-center bg-gray-00">
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={1}
         spaceBetween={10}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4.3,
             spaceBetween: 20,
           },
         }}
         modules={[]}
-        className="mySwiper"
+        className="mySwiper w-full h-full"
       >
         {data.map((item) => (
           <SwiperSlide
             key={item.id}
-            className="rounded-md group overflow-hidden shadow shadow-slate-300 transition duration-500 ease-linear hover:shadow-md hover:shadow-orange-600"
+            className="h-full w-full rounded-md group overflow-hidden shadow shadow-slate-300 transition duration-500 ease-linear hover:shadow-md hover:shadow-orange-600"
           >
-            <Link href="/" className="w-full h-full overflow-hidden">
+            <Link href="/" className=" overflow-hidden">
               <div
-                className="w-full h-3/5 flex items-center justify-center overflow-hidden
+                className="w-full h-3/4 flex items-center justify-center overflow-hidden
                transform group-hover:scale-105 transition duration-500 ease-linear"
               >
                 <img
@@ -56,7 +56,7 @@ function Slides({ setSwiperRef, data }: SlidesProps) {
                   className="w-full h-full rounded-t-md"
                 />
               </div>
-              <div className="w-full h-2/5 gap-4 flex flex-col items-center justify-center">
+              <div className="w-full h-1/4 gap-4 flex flex-col items-center justify-center">
                 <div className="w-full flex justify-center p-1">
                   <h2 className="md:text-xl text-lg font-bold">{item.title}</h2>
                 </div>
