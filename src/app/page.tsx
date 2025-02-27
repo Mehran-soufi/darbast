@@ -4,6 +4,7 @@ import hero from "../assets/home/hero.jpeg";
 import Slider from "@/components/slider/Slider";
 import Property from "@/components/property/Property";
 import ErrorPage from "./_error";
+import Newsletter from "@/components/newsletter/Newsletter";
 
 interface Accommodation {
   id: string;
@@ -23,19 +24,16 @@ async function getAccommodations(): Promise<Accommodation[]> {
   });
   
   if (!res.ok) {
-    console.error("Failed to fetch accommodations");
     throw new Error("Failed to fetch accommodations");
   }
 
   const data = await res.json();
-  console.log("Fetched accommodations data:", data);
   return data;
 }
 
 export default async function Home() {
   try {
     const accommodations = await getAccommodations();
-    console.log("Accommodations in Home component:", accommodations);
 
     return (
       <div>
@@ -47,10 +45,10 @@ export default async function Home() {
         </div>
         <Property/>
         <Slider data={accommodations} />
+        <Newsletter/>
       </div>
     );
   } catch (error) {
-    console.error("Error in Home component:", error);
     return <ErrorPage />;
   }
 }
