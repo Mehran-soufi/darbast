@@ -1,7 +1,4 @@
 import React from "react";
-import { SlEnvolopeLetter } from "react-icons/sl";
-
-import backgroundImg from "@/assets/newsletter/newsletter.jpg";
 import { Box, Button, TextField } from "@mui/material";
 
 function Newsletter() {
