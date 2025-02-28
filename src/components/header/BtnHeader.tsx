@@ -1,13 +1,8 @@
-import Link from "next/link";
+import { Button } from "@mui/material";
 import React from "react";
-import { FaPlus, FaSearch, FaUser } from "react-icons/fa";
+import { FaPlus, FaUser } from "react-icons/fa";
 
 const btns = [
-  {
-    title: "جستجو",
-    href: "/",
-    icon: <FaSearch />,
-  },
   {
     title: "حساب کاربری",
     href: "/",
@@ -22,17 +17,17 @@ const btns = [
 
 function BtnHeader() {
   return (
-    <div className="flex justify-end items-center sm:gap-4 gap-1">
+    <div className="flex justify-end items-center sm:gap-2 gap-1">
       {btns.map((btn, index) => (
-        <Link
-          href={btn.href}
+        <Button
           title={btn.title}
           key={index}
-          className="p-2 border rounded-md transition duration-300 ease-in hover:bg-slate-200 flex justify-between items-center gap-2 sm:text-base text-sm"
+          variant="contained"
+          className="header-btn flex justify-center items-center gap-2"
         >
           {btn.icon}
           <span className="hidden sm:block">{btn.title}</span>
-        </Link>
+        </Button>
       ))}
     </div>
   );

@@ -18,6 +18,18 @@ body {
   margin: 2rem auto;
 }
 
+/* header */
+.header-btn.css-74d805-MuiButtonBase-root-MuiButton-root {
+  padding: 0.2rem 0.5rem !important;
+  font-size: 1rem !important;
+}
+@media (max-width: 768px) {
+  .header-btn.css-74d805-MuiButtonBase-root-MuiButton-root {
+    font-size: 0.6rem !important;
+    padding: 0.3rem 0.2rem !important;
+  }
+}
+
 /* splash */
 .splash {
   width: 100%;
@@ -85,8 +97,7 @@ body {
   padding: 0 0.4rem !important;
   right: 0 !important;
 }
-.search .css-5h82ro-MuiInputBase-root-MuiInput-root
-  {
+.search .css-5h82ro-MuiInputBase-root-MuiInput-root {
   font-family: "Iran-Yekan" !important;
   display: flex !important;
   justify-content: start !important;
@@ -114,8 +125,7 @@ body {
   right: 0 !important;
   left: 100% !important;
 }
-.search .css-74d805-MuiButtonBase-root-MuiButton-root
- {
+.search .css-74d805-MuiButtonBase-root-MuiButton-root {
   font-family: "Iran-Yekan" !important;
   background: transparent !important;
   border: none !important;
@@ -176,7 +186,7 @@ body {
 
 /* newsletter */
 .newsletter {
-  --c: 70px; 
+  --c: 70px;
   aspect-ratio: 1;
   mask: radial-gradient(
       55% var(--c) at 50% var(--c),
