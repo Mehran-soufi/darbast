@@ -85,7 +85,8 @@ body {
   padding: 0 0.4rem !important;
   right: 0 !important;
 }
-.search .css-5h82ro-MuiInputBase-root-MuiInput-root {
+.search .css-5h82ro-MuiInputBase-root-MuiInput-root
+  {
   font-family: "Iran-Yekan" !important;
   display: flex !important;
   justify-content: start !important;
@@ -113,7 +114,8 @@ body {
   right: 0 !important;
   left: 100% !important;
 }
-.search .css-74d805-MuiButtonBase-root-MuiButton-root {
+.search .css-74d805-MuiButtonBase-root-MuiButton-root
+ {
   font-family: "Iran-Yekan" !important;
   background: transparent !important;
   border: none !important;
@@ -122,9 +124,9 @@ body {
   margin: 0 !important;
   transition: 0.3s ease-in !important;
   box-shadow: none !important;
-  width: 100% !important;
   height: 100% !important;
   padding: 0 !important;
+  background: #ea580c !important;
 }
 .search .css-74d805-MuiButtonBase-root-MuiButton-root:hover {
   background: #f97316 !important;
@@ -174,20 +176,36 @@ body {
 
 /* newsletter */
 .newsletter {
-  border-radius: 20px;
+  --c: 70px; 
+  aspect-ratio: 1;
+  mask: radial-gradient(
+      55% var(--c) at 50% var(--c),
+      #0000 calc(100% - 2px),
+      #000
+    )
+    0 calc(-1 * var(--c));
+  overflow: visible;
+}
+
+.ribbon {
+  --f: 0.5em; /* control the folded part*/
+  --r: 0.8em; /* control the ribbon shape */
+
+  position: absolute;
+  top: 20%;
+  /* right: calc(-1 * var(--f)); */
+  right: 0;
+  line-height: 1.8;
+  background: #ea580c;
+  border-bottom: var(--f) solid #0005;
+  border-left: var(--r) solid #0000;
   clip-path: polygon(
-    0% 15%,
-    15% 15%,
-    15% 0%,
-    85% 0%,
-    85% 15%,
-    100% 15%,
-    100% 85%,
-    85% 85%,
-    85% 100%,
-    15% 100%,
-    15% 85%,
-    0% 85%
+    0 0,
+    100% 0,
+    100% calc(100% - var(--f)),
+    calc(100% - var(--f)) 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    0 calc(100% - var(--f)),
+    var(--r) calc(50% - var(--f) / 2)
   );
-  overflow: hidden;
 }
