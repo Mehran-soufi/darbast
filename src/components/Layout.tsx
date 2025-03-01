@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
+import "../utils/nprogress"; // وارد کردن فایل nprogress برای مدیریت نوار لودینگ
 
 interface Ilayout {
   children: React.ReactNode;
 }
 
-function Layout({ children }: Ilayout) {
+const Layout: React.FC<Ilayout> = ({ children }) => {
   return (
     <>
       <Header />
@@ -14,6 +15,6 @@ function Layout({ children }: Ilayout) {
       <Footer />
     </>
   );
-}
+};
 
 export default Layout;
