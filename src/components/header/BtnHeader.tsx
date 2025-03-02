@@ -18,10 +18,10 @@ const BtnHeader: React.FC = () => {
           <span className="hidden sm:block">حساب کاربری</span>
         </Link>
       </Button>
-      <Button title="ثبت آگهی" variant="contained" className="header-btn">
-        <Link href="/" className="flex justify-center items-center gap-2">
+      <Button title="ثبت اقامتگاه" variant="contained" className="header-btn">
+        <Link href="/residence-registration" className="flex justify-center items-center gap-2">
           <FaPlus />
-          <span className="hidden sm:block">ثبت آگهی</span>
+          <span className="hidden sm:block">ثبت اقامتگاه</span>
         </Link>
       </Button>
     </div>

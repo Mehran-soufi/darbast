@@ -167,6 +167,17 @@ body {
   right: 0 !important;
   left: 100% !important;
 }
+.css-ed63ti-MuiInputBase-root-MuiInput-root {
+  border: none !important;
+  outline: none !important;
+}
+.css-ed63ti-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 0 !important;
+  outline: none !important;
+}
+.css-ed63ti-MuiInputBase-root-MuiInput-root::before{
+  border: none !important;
+}
 .search .css-74d805-MuiButtonBase-root-MuiButton-root {
   font-family: "Iran-Yekan" !important;
   background: transparent !important;
