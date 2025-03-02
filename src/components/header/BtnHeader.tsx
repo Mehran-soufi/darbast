@@ -1,47 +1,31 @@
 "use client";
 import { Button } from "@mui/material";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { FaPlus, FaUser } from "react-icons/fa";
 
-const btns = [
-  {
-    title: "حساب کاربری",
-    href: "/login",
-    icon: <FaUser />,
-  },
-  {
-    title: "ثبت آگهی",
-    href: "/",
-    icon: <FaPlus />,
-  },
-];
-
-function BtnHeader() {
-  // const router = useRouter();
+const BtnHeader: React.FC = () => {
+  const [account, setAccount] = useState<boolean>(true);
 
   return (
     <div className="flex justify-end items-center sm:gap-2 gap-1">
-      {btns.map((btn, index) => (
-        <Button
-          // onClick={() => router.push(`${btn.href}`)}
-          title={btn.title}
-          key={index}
-          variant="contained"
-          className="header-btn"
+      <Button title="حساب کاربری" variant="contained" className="header-btn">
+        <Link
+          href={account ? "/account" : "/login"}
+          className="flex justify-center items-center gap-2"
         >
-          <Link
-            href={btn.href}
-            className="flex justify-center items-center gap-2"
-          >
-            {btn.icon}
-            <span className="hidden sm:block">{btn.title}</span>
-          </Link>
-        </Button>
-      ))}
+          <FaUser />
+          <span className="hidden sm:block">حساب کاربری</span>
+        </Link>
+      </Button>
+      <Button title="ثبت آگهی" variant="contained" className="header-btn">
+        <Link href="/" className="flex justify-center items-center gap-2">
+          <FaPlus />
+          <span className="hidden sm:block">ثبت آگهی</span>
+        </Link>
+      </Button>
     </div>
   );
-}
+};
 
 export default BtnHeader;

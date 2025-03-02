@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-import "../utils/nprogress"; // وارد کردن فایل nprogress برای مدیریت نوار لودینگ
+import ClientLayout from "../app/ClientLayout";
 
 interface Ilayout {
   children: React.ReactNode;
@@ -9,11 +9,11 @@ interface Ilayout {
 
 const Layout: React.FC<Ilayout> = ({ children }) => {
   return (
-    <>
+    <ClientLayout>
       <Header />
       {children}
       <Footer />
-    </>
+    </ClientLayout>
   );
 };
 

@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Search from "@/components/search/Search";
 import hero from "../assets/home/hero.jpeg";
 import Slider from "@/components/slider/Slider";
@@ -22,7 +21,7 @@ async function getAccommodations(): Promise<Accommodation[]> {
   const res = await fetch("http://localhost:3001/accommodations", {
     cache: "no-store",
   });
-  
+
   if (!res.ok) {
     throw new Error("Failed to fetch accommodations");
   }
