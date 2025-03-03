@@ -285,14 +285,18 @@ body {
 .css-1i4ywhz-MuiCollapse-wrapperInner {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
+  justify-content: center !important;
 }
 .css-1iw3t7y-MuiFormControl-root {
   width: 100%;
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
+  justify-content: center!important;
 }
 .css-1lj39kh-MuiAccordionDetails-root {
   padding: 0.4rem !important;
+  direction: rtl !important;
+}
+.MuiAccordion-region{
+  width: 90% !important;
 }

@@ -43,12 +43,12 @@ const CustomFileInput = styled(Box)(({ theme }) => ({
     height: "80px",
   },
   [theme.breakpoints.up("md")]: {
-    width: "90px",
-    height: "90px",
+    width: "80px",
+    height: "80px",
   },
   [theme.breakpoints.up("lg")]: {
-    width: "110px",
-    height: "110px",
+    width: "90px",
+    height: "90px",
   },
 }));
 
@@ -66,21 +66,25 @@ const CustomCheckbox = styled(Checkbox)({
   },
 });
 
+const CustomSlider = styled(Slider)({
+  color: "#ea580c",
+});
+
 const marks = [
-  { value: 8, label: "8 AM" },
-  { value: 9, label: "9 AM" },
-  { value: 10, label: "10 AM" },
-  { value: 11, label: "11 AM" },
-  { value: 12, label: "12 PM" },
-  { value: 13, label: "1 PM" },
-  { value: 14, label: "2 PM" },
-  { value: 15, label: "3 PM" },
-  { value: 16, label: "4 PM" },
-  { value: 17, label: "5 PM" },
-  { value: 18, label: "6 PM" },
-  { value: 19, label: "7 PM" },
-  { value: 20, label: "8 PM" },
-  { value: 21, label: "9 PM" },
+  { value: 8, label: "8" },
+  { value: 9, label: "9" },
+  { value: 10, label: "10" },
+  { value: 11, label: "11" },
+  { value: 12, label: "12" },
+  { value: 13, label: "13" },
+  { value: 14, label: "14" },
+  { value: 15, label: "15" },
+  { value: 16, label: "16" },
+  { value: 17, label: "17" },
+  { value: 18, label: "18" },
+  { value: 19, label: "19" },
+  { value: 20, label: "20" },
+  { value: 21, label: "21" },
 ];
 
 export default function CreateAd() {
@@ -174,12 +178,13 @@ export default function CreateAd() {
           </div>
           <div className="search w-full lg:w-1/2 lg:h-full flex flex-col items-end justify-start gap-8 lg:mt-0 mt-8">
             <div className="w-full flex flex-wrap lg:justify-end justify-center items-center gap-2">
-              <div className="w-full lg:pr-[15%]">
-                <p className="lg:text-2xl sm:text-xl text-lg flex flex-col">
+              <div className="w-full lg:pr-[20%] flex justify-start items-center gap-2">
+                <p className="lg:text-2xl sm:text-xl text-lg">
                   انتخاب عکس
                 </p>
-                <span>حداقل 3 مورد انتخاب کنید.</span>
+               <span>(حداقل 3 مورد انتخاب کنید)</span>
               </div>
+              <div className="lg:w-4/5 w-full flex justify-between items-center">
               {previews.map((preview, index) => (
                 <CustomFileInput
                   key={index}
@@ -208,6 +213,8 @@ export default function CreateAd() {
                   />
                 </CustomFileInput>
               ))}
+              </div>
+
             </div>
             <Accordion className="lg:w-4/5 w-full" style={{ direction: "rtl" }}>
               <AccordionSummary
@@ -332,34 +339,45 @@ export default function CreateAd() {
               >
                 <Typography component="span">ساعت ورود و خروج</Typography>
               </AccordionSummary>
-              <AccordionDetails>
-                <FormControl className="w-full flex flex-col items-center">
-                  <Box className="w-full flex flex-col md:flex-row justify-center items-center">
-                  <Typography component="span">ساعت ورود</Typography>
-                  <Slider
-                    value={checkIn}
-                    onChange={handleCheckInChange}
-                    valueLabelDisplay="auto"
-                    marks={marks.slice(0, 5)}
-                    min={8}
-                    max={12}
-                    className="w-4/5"
+              <AccordionDetails className="w-full">
+                <FormControl className="w-full flex flex-col items-start">
+                  <Box className="w-full flex flex-col justify-start items-center gap-4">
+                    <Typography component="span" className="w-full font-bold">
+                      ساعت ورود
+                    </Typography>
+                    <CustomSlider
+                      value={checkIn}
+                      onChange={handleCheckInChange}
+                      valueLabelDisplay="auto"
+                      marks={marks.slice(0, 7)}
+                      min={8}
+                      max={14}
+                      className="lg:w-4/5 w-full"
                     />
-                    </Box>
-                  <Typography component="span">ساعت خروج</Typography>
-                  <Slider
-                    value={checkOut}
-                    onChange={handleCheckOutChange}
-                    valueLabelDisplay="auto"
-                    marks={marks}
-                    min={8}
-                    max={21}
-                    className="w-4/5"
-                  />
+                  </Box>
+                  <Box className="w-full flex flex-col justify-start items-center gap-4 mt-4">
+                    <Typography component="span" className="w-full font-bold">
+                      ساعت خروج
+                    </Typography>
+                    <CustomSlider
+                      value={checkOut}
+                      onChange={handleCheckOutChange}
+                      valueLabelDisplay="auto"
+                      marks={marks}
+                      min={8}
+                      max={21}
+                      className="lg:w-4/5 w-full"
+                    />
+                  </Box>
                 </FormControl>
               </AccordionDetails>
             </Accordion>
           </div>
+        </div>
+        <div className="w-full flex justify-center items-center mt-8">
+        <Button className="lg:w-1/3 w-full" variant="contained">
+            ثبت اقامتگاه
+          </Button>
         </div>
       </section>
     </div>
