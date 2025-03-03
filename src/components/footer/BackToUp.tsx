@@ -9,7 +9,7 @@ function BackToUp() {
 
   return (
     <div className="my-4 w-full flex justify-center items-center0">
-      <Button variant="contained" onClick={backToUPHandle}>
+      <Button variant="contained" onClick={backToUPHandle} className="header-btn">
         برگشت به بالا
       </Button>
     </div>
