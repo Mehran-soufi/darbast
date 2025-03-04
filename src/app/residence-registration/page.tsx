@@ -20,6 +20,8 @@ import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
+import Swal from "sweetalert2";
+
 const Input = styled("input")({
   display: "none",
 });
@@ -132,12 +134,40 @@ export default function CreateAd() {
     setCheckOut(newValue as number);
   };
 
+  const handleRestForm = () => {
+    Swal.fire({
+      title: "آیا مطمئن هستید؟",
+      text: "در صورت تایید، فرم بازنشانی خواهد شد.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#16a34a",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "بازنشانی",
+      cancelButtonText: "لغو",
+      html: '<div class="text-right lg:text-xl sm:text-lg text-base"></div>',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "بازنشانی فرم!",
+          text: "فرم بازنشانی شد!",
+          icon: "success",
+          confirmButtonColor: "#16a34a",
+          confirmButtonText: "تایید",
+        });
+      }
+    });
+  };
+
   return (
     <div className="w-full min-h-screen">
       <section className="section">
         <div className="w-full my-4 flex justify-between items-center border-b py-4">
           <p className="lg:text-2xl sm:text-xl text-lg">ثبت اقامتگاه</p>
-          <Button className="header-btn" variant="contained">
+          <Button
+            className="header-btn"
+            variant="contained"
+            onClick={handleRestForm}
+          >
             پاک سازی فرم
           </Button>
         </div>
@@ -179,42 +209,39 @@ export default function CreateAd() {
           <div className="search w-full lg:w-1/2 lg:h-full flex flex-col items-end justify-start gap-8 lg:mt-0 mt-8">
             <div className="w-full flex flex-wrap lg:justify-end justify-center items-center gap-2">
               <div className="w-full lg:pr-[20%] flex justify-start items-center gap-2">
-                <p className="lg:text-2xl sm:text-xl text-lg">
-                  انتخاب عکس
-                </p>
-               <span>(حداقل 3 مورد انتخاب کنید)</span>
+                <p className="lg:text-2xl sm:text-xl text-lg">انتخاب عکس</p>
+                <span>(حداقل 3 مورد انتخاب کنید)</span>
               </div>
               <div className="lg:w-4/5 w-full flex justify-between items-center">
-              {previews.map((preview, index) => (
-                <CustomFileInput
-                  key={index}
-                  onClick={() => handleFileUpload(index)}
-                >
-                  {preview ? (
-                    <img
-                      src={preview}
-                      alt="پیش‌نمایش"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
+                {previews.map((preview, index) => (
+                  <CustomFileInput
+                    key={index}
+                    onClick={() => handleFileUpload(index)}
+                  >
+                    {preview ? (
+                      <img
+                        src={preview}
+                        alt="پیش‌نمایش"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    ) : (
+                      <AddPhotoAlternateIcon className="text-gray-500 lg:text-2xl sm:text-xl text-lg" />
+                    )}
+                    <Input
+                      ref={(el) => {
+                        fileInputRefs.current[index] = el;
                       }}
+                      type="file"
+                      accept="image/*"
+                      onChange={(event) => handleFileChange(event, index)}
                     />
-                  ) : (
-                    <AddPhotoAlternateIcon className="text-gray-500 lg:text-2xl sm:text-xl text-lg" />
-                  )}
-                  <Input
-                    ref={(el) => {
-                      fileInputRefs.current[index] = el;
-                    }}
-                    type="file"
-                    accept="image/*"
-                    onChange={(event) => handleFileChange(event, index)}
-                  />
-                </CustomFileInput>
-              ))}
+                  </CustomFileInput>
+                ))}
               </div>
-
             </div>
             <Accordion className="lg:w-4/5 w-full" style={{ direction: "rtl" }}>
               <AccordionSummary
@@ -375,7 +402,7 @@ export default function CreateAd() {
           </div>
         </div>
         <div className="w-full flex justify-center items-center mt-8">
-        <Button className="lg:w-1/3 w-full" variant="contained">
+          <Button className="lg:w-1/3 w-full" variant="contained">
             ثبت اقامتگاه
           </Button>
         </div>

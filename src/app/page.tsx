@@ -4,6 +4,9 @@ import Slider from "@/components/slider/Slider";
 import Property from "@/components/property/Property";
 import ErrorPage from "./_error";
 import Newsletter from "@/components/newsletter/Newsletter";
+import HostBanner from "@/components/host-banner/HostBanner";
+import Podcast from "@/components/podcast/Podcast";
+import Announcement from "@/components/announcement/Announcement";
 
 interface Accommodation {
   id: string;
@@ -44,6 +47,9 @@ export default async function Home() {
         </div>
         <Property/>
         <Slider data={accommodations} />
+        <HostBanner/>
+        <Podcast/>
+        <Announcement/>
         <Newsletter/>
       </div>
     );

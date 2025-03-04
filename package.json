@@ -25,6 +25,7 @@
     "react-intl": "^7.1.6",
     "react-multi-date-picker": "^4.5.2",
     "styled-components": "^6.1.15",
+    "sweetalert2": "^11.17.2",
     "swiper": "^11.2.4"
   },
   "devDependencies": {

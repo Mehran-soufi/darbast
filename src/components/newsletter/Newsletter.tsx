@@ -25,7 +25,7 @@ function Newsletter() {
               id="phoneField"
               label="شماره تماس"
               variant="standard"
-              className="sm:w-2/5 w-full"
+              className="sm:w-2/5 w-full input-cus"
             />
             <Button variant="contained" className="sm:w-1/5 w-full">
               عضویت

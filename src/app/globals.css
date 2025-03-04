@@ -72,19 +72,6 @@ body {
   }
 }
 
-/* splash */
-.splash {
-  width: 100%;
-  height: 100%;
-  background: repeating-conic-gradient(#00f 0 3%, #0000 0 11%),
-    repeating-conic-gradient(#0000 0 5%, #00f 0 7%) 50% / 60% 60%,
-    repeating-conic-gradient(#0000 0 7%, #00f 0 9%) 50% / 70% 70%,
-    repeating-conic-gradient(#0000 0 11%, #00f 0 13%) 50% / 80% 80%,
-    radial-gradient(#00f 22%, #0000 0), #fff;
-  background-repeat: no-repeat;
-  filter: blur(20px) contrast(50);
-  /* box-shadow: 0 0 0 50px #fff; */
-}
 
 /* menu */
 .custom-menu {
@@ -291,12 +278,41 @@ body {
   width: 100%;
   display: flex !important;
   align-items: center !important;
-  justify-content: center!important;
+  justify-content: center !important;
 }
 .css-1lj39kh-MuiAccordionDetails-root {
   padding: 0.4rem !important;
   direction: rtl !important;
 }
-.MuiAccordion-region{
+.MuiAccordion-region {
   width: 90% !important;
+}
+
+/* sweetalert */
+.swal2-popup {
+  font-size: 16px;
+}
+div:where(.swal2-icon).swal2-warning,
+div:where(.swal2-icon).swal2-success {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .swal2-popup {
+    font-size: 14px;
+  }
+  div:where(.swal2-icon).swal2-warning,
+  div:where(.swal2-icon).swal2-success {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .swal2-popup {
+    font-size: 12px;
+  }
+  div:where(.swal2-icon).swal2-warning,
+  div:where(.swal2-icon).swal2-success {
+    font-size: 0.5rem;
+  }
 }
