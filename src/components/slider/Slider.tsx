@@ -15,6 +15,7 @@ export interface Accommodation {
   main_image_url: string;
   category: string;
   additional_images: string[];
+  facilities: string[];
 }
 
 function Slider({ data }: { data: Accommodation[] }) {
@@ -31,7 +32,10 @@ function Slider({ data }: { data: Accommodation[] }) {
   return (
     <section className="section relative">
       <Detail handleNext={handleNext} handlePrev={handlePrev} />
-      <Slides setSwiperRef={(swiper: SwiperType) => (swiperRef.current = swiper)} data={data} />
+      <Slides
+        setSwiperRef={(swiper: SwiperType) => (swiperRef.current = swiper)}
+        data={data}
+      />
     </section>
   );
 }

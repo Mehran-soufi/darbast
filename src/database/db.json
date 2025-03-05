@@ -177,12 +177,19 @@
       "price": 5000000,
       "discount": 15,
       "city": "رشت",
-      "province":"گیلان",
+      "province": "گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
         "https://imgurl.ir/uploads/h40403_villa-saheli2.jpg",
         "https://imgurl.ir/uploads/e86252_villa-saheli.jpg"
+      ],
+      "facilities": [
+        "استخر",
+        "وای فای",
+        "پارکینگ",
+        "زمین بازی کودک",
+        "کنسول بازی"
       ]
     },
     {
@@ -192,12 +199,19 @@
       "price": 3500000,
       "discount": 10,
       "city": "رشت",
-      "province":"گیلان",
+      "province": "گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
         "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
         "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ],
+            "facilities": [
+        "استخر",
+        "وای فای",
+        "پارکینگ",
+        "زمین بازی کودک",
+        "کنسول بازی"
       ]
     },
     {
@@ -207,12 +221,19 @@
       "price": 5000000,
       "discount": 15,
       "city": "رشت",
-      "province":"گیلان",
+      "province": "گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
         "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
         "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ],
+            "facilities": [
+        "استخر",
+        "وای فای",
+        "پارکینگ",
+        "زمین بازی کودک",
+        "کنسول بازی"
       ]
     },
     {
@@ -222,12 +243,19 @@
       "price": 5000000,
       "discount": 15,
       "city": "رشت",
-      "province":"گیلان",
+      "province": "گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
         "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
         "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ],
+            "facilities": [
+        "استخر",
+        "وای فای",
+        "پارکینگ",
+        "زمین بازی کودک",
+        "کنسول بازی"
       ]
     },
     {
@@ -237,12 +265,19 @@
       "price": 5000000,
       "discount": 15,
       "city": "رشت",
-      "province":"گیلان",
+      "province": "گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
         "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
         "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ],
+            "facilities": [
+        "استخر",
+        "وای فای",
+        "پارکینگ",
+        "زمین بازی کودک",
+        "کنسول بازی"
       ]
     },
     {
@@ -252,12 +287,19 @@
       "price": 5000000,
       "discount": 15,
       "city": "رشت",
-      "province":"گیلان",
+      "province": "گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
         "https://drive.google.com/file/d/1OvfcIiCwYVgK-zTAF6B24e_X6wDtbHvh/view?usp=drive_link",
         "https://imgurl.ir/uploads/r234683_abi.jpg"
+      ],
+            "facilities": [
+        "استخر",
+        "وای فای",
+        "پارکینگ",
+        "زمین بازی کودک",
+        "کنسول بازی"
       ]
     }
   ]

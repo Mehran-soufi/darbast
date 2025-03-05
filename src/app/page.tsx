@@ -19,6 +19,7 @@ export interface Accommodation {
   main_image_url: string;
   category: string;
   additional_images: string[];
+  facilities: string[];
 }
 
 async function getAccommodations(): Promise<Accommodation[]> {
