@@ -173,10 +173,11 @@
     {
       "id": 1,
       "title": "ویلای ساحلی آبی",
-      "rating": 4.7,
+      "rating": 4.5,
       "price": 5000000,
       "discount": 15,
-      "city_id": 1,
+      "city": "رشت",
+      "province":"گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
@@ -190,7 +191,8 @@
       "rating": 4.9,
       "price": 3500000,
       "discount": 10,
-      "city_id": 1,
+      "city": "رشت",
+      "province":"گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
@@ -204,7 +206,8 @@
       "rating": 4.7,
       "price": 5000000,
       "discount": 15,
-      "city_id": 1,
+      "city": "رشت",
+      "province":"گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
@@ -218,7 +221,8 @@
       "rating": 4.7,
       "price": 5000000,
       "discount": 15,
-      "city_id": 1,
+      "city": "رشت",
+      "province":"گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
@@ -232,7 +236,8 @@
       "rating": 4.7,
       "price": 5000000,
       "discount": 15,
-      "city_id": 1,
+      "city": "رشت",
+      "province":"گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [
@@ -246,7 +251,8 @@
       "rating": 4.7,
       "price": 5000000,
       "discount": 15,
-      "city_id": 1,
+      "city": "رشت",
+      "province":"گیلان",
       "main_image_url": "https://imgurl.ir/uploads/r234683_abi.jpg",
       "category_id": 1,
       "additional_images": [

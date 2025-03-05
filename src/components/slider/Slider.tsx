@@ -10,7 +10,8 @@ export interface Accommodation {
   rating: number;
   price: number;
   discount: number;
-  city_id: number;
+  city: string;
+  province: string;
   main_image_url: string;
   category: string;
   additional_images: string[];

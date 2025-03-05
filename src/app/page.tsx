@@ -2,19 +2,20 @@ import Search from "@/components/search/Search";
 import hero from "../assets/home/hero.jpeg";
 import Slider from "@/components/slider/Slider";
 import Property from "@/components/property/Property";
-import ErrorPage from "./_error";
+import ErrorPage from "./error";
 import Newsletter from "@/components/newsletter/Newsletter";
 import HostBanner from "@/components/host-banner/HostBanner";
 import Podcast from "@/components/podcast/Podcast";
 import Announcement from "@/components/announcement/Announcement";
 
-interface Accommodation {
+export interface Accommodation {
   id: string;
   title: string;
   rating: number;
   price: number;
   discount: number;
-  city_id: number;
+  city: string;
+  province: string;
   main_image_url: string;
   category: string;
   additional_images: string[];
@@ -40,17 +41,21 @@ export default async function Home() {
     return (
       <div>
         <div className="w-full h-[80vh] relative hero">
-          <img src={hero.src} alt="hero" className="w-full h-full object-cover" />
+          <img
+            src={hero.src}
+            alt="hero"
+            className="w-full h-full object-cover"
+          />
           <div className="w-full h-full absolute left-0 top-0 flex justify-center items-center">
             <Search />
           </div>
         </div>
-        <Property/>
+        <Property />
         <Slider data={accommodations} />
-        <HostBanner/>
-        <Podcast/>
-        <Announcement/>
-        <Newsletter/>
+        <HostBanner />
+        <Podcast />
+        <Announcement />
+        <Newsletter />
       </div>
     );
   } catch (error) {

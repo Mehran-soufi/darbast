@@ -45,7 +45,7 @@ function Slides({ setSwiperRef, data }: SlidesProps) {
             key={item.id}
             className="h-full w-full rounded-md group overflow-hidden shadow shadow-slate-300 transition duration-500 ease-linear hover:shadow-md hover:shadow-orange-600"
           >
-            <Link href="/" className=" overflow-hidden">
+            <Link href={`/residence/${item.id}`} className=" overflow-hidden">
               <div
                 className="w-full h-3/4 flex items-center justify-center overflow-hidden
                transform group-hover:scale-105 transition duration-500 ease-linear"
